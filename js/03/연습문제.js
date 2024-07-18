@@ -162,18 +162,20 @@ console.log(triangleArea(10, 5));
 // 문자열이 주어졌을 때, 연속된 동일한 문자를 하나의 문자와 그 문자의 개수로 압축해서 반환하는 함수를 만들어주세요.
 
 const countChar = (str) => {
+  let cnt = 1;
   let result = "";
-  let counter = 0;
-  for (let char of str) {
-    if (result === "") {
-      counter++;
-      result = char;
-    } else if (char === result) {
-      counter++;
-    } else if (char != result) {
-      counter = 1;
-      result = char;
+
+  for (let i = 1; i <= str.length; i++) {
+    if (str[i - 1] === str[i]) {
+      // 이미 발견된 문자열 count
+      cnt++;
+    } else {
+      // 다음 문자열로 넘어가며 기존 저장된 count와 문자열 저장
+      result += str[i - 1] + cnt;
+      cnt = 1;
     }
   }
+  return result;
 };
-countChar("aabbaa");
+
+console.log(countChar("aaabbfbccc"));
