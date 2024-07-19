@@ -1,1 +1,4 @@
 *.[md]
+/ts/node_modules/*
+/ts/package-lock.json
+/ts/package.json
