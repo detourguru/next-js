@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap");
+
+@font-face {
+  font-family: "HSSanTokki20-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JejuDoldam";
+  src: url("../fonts/doldam.woff2"), url("../fonts/doldam.woff");
+}
+
+.doldam {
+  font-family: "JejuDoldam";
+}
+
+.malang {
+  font-family: "HSSanTokki20-Regular";
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.playwrite-be-vlg {
+  font-family: "Playwrite BE VLG", sans-serif;
+}

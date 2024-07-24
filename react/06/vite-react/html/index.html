@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+    <script>
+      async function createDom() {
+        console.time();
+        const ul = document.querySelector("ul");
+        console.log("실행");
+        let ilList = "";
+        for (let i = 1; i <= 4000; i++) {
+          ilList += `<li>${i}번째 li</li>`;
+        }
+        ul.innerHTML = ilList;
+        console.timeEnd();
+      }
+    </script>
+  </head>
+  <body>
+    <button defer onclick="createDom()">추가</button>
+    <ul></ul>
+  </body>
+</html>

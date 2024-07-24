@@ -52,11 +52,24 @@
 // });
 
 const h1 = document.querySelector("h1");
+h1.style.color = "blue";
+h1.style.background = "black";
+h1.addEventListener("mouseover", () => {
+  h1.style.color = "red";
+  h1.style.background = "green";
+});
+h1.addEventListener("mouseout", () => {
+  h1.style.color = "blue";
+  h1.style.background = "black";
+});
 const increase = document.querySelector("#increase");
 const decrease = document.querySelector("#decrease");
 
 increase.addEventListener("click", () => {
   if (h1.innerHTML < 10) h1.innerHTML++;
+  else {
+    alert("황정식 바보!");
+  }
 });
 
 decrease.addEventListener("click", () => {
