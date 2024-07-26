@@ -1,0 +1,5 @@
+@import "./tailwind.css";
+
+.bg-img {
+  background-image: url("../assets/images/monk.jpg");
+}
